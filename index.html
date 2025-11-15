@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>The Fashion Shop</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="site-header">
+		<div class="nav-wrapper">
+			<table class="nav-table" role="navigation" aria-label="Main Navigation">
+				<tr>
+					<td class="brand-cell">
+						<div class="brand">FASH<span class="accent">ION</span></div>
+					</td>
+					<td class="links-cell">
+						<div class="links">
+							<a class="nav-btn" href="index.html">Home</a>
+							<a class="nav-btn" href="all-categories.html">Shop</a>
+							<a class="nav-btn" href="shop.html">Products</a>
+							<a class="nav-btn" href="index.html#Contact">Contact</a>
+              <a class="nav-btn" href="review.html">Reviews</a>
+						</div>
+					</td>
+					<td class="actions-cell">
+						<div class="actions">
+							<button class="icon-btn" aria-label="Cart">🛒</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1>Welcome to The Fashion Shop</h1>
+			<p class="lead">Curated trends. Quality pieces. Great prices.</p>
+		</section>
+
+		<center>
+			<section>
+				<h2 style="font-family: 'Courier New', Courier, monospace;">Trending Products</h2>
+        <br>
+				<div class="container">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel" style="width: 70vw; max-width: 800px;">
+						
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+							<li data-target="#myCarousel" data-slide-to="3"></li>
+							<li data-target="#myCarousel" data-slide-to="4"></li>
+						</ol>
+
+						
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="images/shoes.png" alt="Shoes" style="width: 100%; height: 400px; object-fit: contain;">
+							</div>
+							<div class="item">
+								<img src="images/women_clothing.png" alt="Women Clothing" style="width: 100%; height: 400px; object-fit: contain;">
+							</div>
+							<div class="item">
+								<img src="images/watch.png" alt="Watch" style="width: 100%; height: 400px; object-fit: contain;">
+							</div>
+							<div class="item">
+								<img src="images/men_clothing.png" alt="Men Clothing" style="width: 100%; height: 400px; object-fit: contain;">
+							</div>
+							<div class="item">
+								<img src="images/airpods.png" alt="Airpods" style="width: 100%; height: 400px; object-fit: contain;">
+							</div>
+						</div>
+
+						
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</section>
+		</center>
+	</main>
+<br>
+	<footer>
+		<h2 class="page-header" id="Contact" align="center">Contact Us</h2>
+		<div style="height: 400px; justify-content: center; display: flex; gap:20px;">
+			<div id="img">
+				<img src="https://media.discordapp.net/attachments/1167154463581151242/1438166184414675065/Screenshot_2025-11-12_at_7.28.50_PM.png?ex=6915e422&is=691492a2&hm=4011d3e3349f91eefc6db19d25ac90e0e4aac3732e59563ee165afae4fd6bd63&=&format=webp&quality=lossless&width=885&height=881" style="height: 200px; width: 200px; border-radius: 50%;">
+			</div>
+			<div id="text">
+				<h3>Store name :</h3>
+				<h2>Fashion Shop</h2>
+				<a href="mailto:my@gmail.com?subject=hi">
+					<h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;store@gmail.com</h5>
+				</a>
+				<a href="#">
+					<h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;fashion@123</h5>
+				</a>
+				<a href="#">
+					<h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;9916001600</h5>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+
+</body>
+
+</html>

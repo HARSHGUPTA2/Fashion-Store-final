@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customer Reviews - The Fashion Shop</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+	<header class="site-header">
+		<div class="nav-wrapper">
+			<table class="nav-table" role="navigation" aria-label="Main Navigation">
+				<tr>
+					<td class="brand-cell">
+						<div class="brand">FASH<span class="accent">ION</span></div>
+					</td>
+					<td class="links-cell">
+						<div class="links">
+							<a class="nav-btn" href="index.html">Home</a>
+							<a class="nav-btn" href="all-categories.html">Shop</a>
+							<a class="nav-btn" href="shop.html">Products</a>
+							<a class="nav-btn" href="review.html#Contact">Contact</a>
+						</div>
+					</td>
+					<td class="actions-cell">
+						<div class="actions">
+							<button class="icon-btn" aria-label="Cart">🛍️</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</header>
+
+	<main>
+		<section class="hero">
+			<h1>Customer Feedback</h1>
+			<p class="lead">Read past reviews or leave your own — we read every one.</p>
+		</section>
+
+		<div style="max-width: 1100px; margin: 1.5rem auto; padding: 1rem;">
+			<div class="row">
+				<div class="col-md-5">
+					<div style="background:rgba(255,255,255,0.9); padding: 18px; border-radius:12px; box-shadow:0 8px 24px rgba(30,40,50,0.06)">
+						<h3>Leave a Review</h3>
+						<form id="reviewForm">
+							<div class="form-group">
+								<label for="name">Your name</label>
+								<input id="name" name="name" class="form-control" placeholder="Full name" required>
+							</div>
+
+							<div class="form-group">
+								<label for="product">Product</label>
+								<select id="product" name="product" class="form-control">
+									<option>Shoes</option>
+									<option>Women Clothing</option>
+									<option>Watch</option>
+									<option>Men Clothing</option>
+									<option>Airpods</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="rating">Rating</label>
+								<select id="rating" name="rating" class="form-control" aria-label="Rating">
+									<option value="5">5 — Excellent</option>
+									<option value="4">4 — Good</option>
+									<option value="3">3 — Okay</option>
+									<option value="2">2 — Poor</option>
+									<option value="1">1 — Terrible</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="message">Review</label>
+								<textarea id="message" name="message" class="form-control" rows="4" placeholder="Tell others about your experience" required></textarea>
+							</div>
+
+							<div style="display:flex; gap:8px; align-items:center;">
+								<button type="submit" class="btn btn-primary">Submit Review</button>
+								<button type="button" id="clearBtn" class="btn btn-default">Clear</button>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="col-md-7">
+					<div style="background:rgba(255,255,255,0.95); padding: 12px; border-radius:12px; box-shadow:0 8px 24px rgba(30,40,50,0.04)">
+						<h3>Past Reviews</h3>
+						<div style="overflow:auto; max-height:520px;">
+							<table id="reviewsTable" class="table table-striped table-hover" aria-live="polite">
+								<thead>
+									<tr>
+										<th style="width:120px">Date</th>
+										<th>Name</th>
+										<th>Product</th>
+										<th style="width:80px">Rating</th>
+										<th>Review</th>
+										<th style="width:70px">Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+							</table>
+						</div>
+						<p id="emptyHint" style="color:#666; display:none">No reviews yet — be the first to add one!</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+
+	<footer>
+		<h2 class="page-header" id="Contact" align="center">Contact Us</h2>
+		<div style="height: 200px; justify-content: center; display: flex; gap:20px;">
+			<div id="img">
+				<img src="https://media.discordapp.net/attachments/1167154463581151242/1438166184414675065/Screenshot_2025-11-12_at_7.28.50_PM.png?ex=6915e422&is=691492a2&hm=4011d3e3349f91eefc6db19d25ac90e0e4aac3732e59563ee165afae4fd6bd63&=&format=webp&quality=lossless&width=885&height=881" style="height: 200px; width: 200px; border-radius: 50%;">
+			</div>
+			<div id="text">
+				<h3>Store name :</h3>
+				<h4>Fashion Shop</h4>
+				<a href="mailto:my@gmail.com?subject=hi">
+					<h5><i class="fa fa-envelope"></i>&nbsp;&nbsp;store@gmail.com</h5>
+				</a>
+				<a href="#">
+					<h5><i class="fa fa-instagram"></i>&nbsp;&nbsp;fashion@123</h5>
+				</a>
+				<a href="#">
+					<h5><i class="fa fa-phone-square"></i>&nbsp;&nbsp;9916001600</h5>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	
+</body>
+
+</html>

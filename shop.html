@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | The Fashion Shop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-wrapper">
+            <table class="nav-table" role="navigation" aria-label="Main Navigation">
+                <tr>
+                    <td class="brand-cell">
+                        <div class="brand">FASH<span class="accent">ION</span></div>
+                    </td>
+                    <td class="links-cell">
+                        <div class="links">
+                            <a class="nav-btn" href="index.html">Home</a>
+                            <a class="nav-btn" href="all-categories.html">Products</a>
+                            <a class="nav-btn" href="shop.html">Shop</a>
+                            <a class="nav-btn" href="index.html#Contact">Contact</a>
+                            <a class="nav-btn" href="review.html">Reviews</a>
+                        </div>
+                    </td>
+                    <td class="actions-cell">
+                        <div class="actions">
+                            <button class="icon-btn" aria-label="Cart">🛒</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <center>
+        <section style="margin-top: 8rem;">
+            <h2 style="font-weight: 800;">ALL PRODUCTS</h2>
+           
+            <br>
+            <h3 style="text-decoration: underline;" id="shoes">SHOES</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/7/z/r/8-white-leaf-8-urbanbox-white-black-original-imagvgf4cuzs2hrw.jpeg?q=70" alt="White Sneakers">
+                    <div>
+                        <h3>Urban Runner</h3>
+                        <p>Size: <b>8</b></p>
+                        <h5><i class="bx bx-rupee"></i>2499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.V7fO5Ux7S_zMH_aXVZqJfgHaJ3?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Grey Casual">
+                    <div>
+                        <h3>Grey Casual</h3>
+                        <p>Size: <b>9</b></p>
+                        <h5><i class="bx bx-rupee"></i>1899</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.on1nONSZCWkKeoizMk2_vgAAAA?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sport Pro">
+                    <div>
+                        <h3>Sport Pro</h3>
+                        <p>Size: <b>10</b></p>
+                        <h5><i class="bx bx-rupee"></i>2199</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.jda1xdNQHfeLQc-KyshTbQHaE7?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Black Classic">
+                    <div>
+                        <h3>Black Classic</h3>
+                        <p>Size: <b>9</b></p>
+                        <h5><i class="bx bx-rupee"></i>1799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="watches">WATCHES</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.RQxZ49tCYkpru_TZ6aH5igHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Classic Silver">
+                    <div>
+                        <h3>Classic Silver</h3>
+                        <p>Type: <b>Analog</b></p>
+                        <h5><i class="bx bx-rupee"></i>3499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://www.dgshop.it/wp-content/uploads/2024/01/Smartwatch-Pro-1.png" alt="Smart Pro">
+                    <div>
+                        <h3>Smart Pro</h3>
+                        <p>Type: <b>Digital</b></p>
+                        <h5><i class="bx bx-rupee"></i>4999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://www.cashaway.com.au/assets/full/148125.jpg?20230209155006" alt="Gold Elite">
+                    <div>
+                        <h3>Gold Elite</h3>
+                        <p>Type: <b>Luxury</b></p>
+                        <h5><i class="bx bx-rupee"></i>5999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.0vdpZS_Ge8y1rwW_TL9oyQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sport Watch">
+                    <div>
+                        <h3>Sport Watch</h3>
+                        <p>Type: <b>Athletic</b></p>
+                        <h5><i class="bx bx-rupee"></i>2999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="women">WOMEN CLOTHING</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.lubiogClHfseNWoLVlgO5QHaJV?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Floral Dress">
+                    <div>
+                        <h3>Floral Dress</h3>
+                        <p>Size: <b>M</b></p>
+                        <h5><i class="bx bx-rupee"></i>1299</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://i.pinimg.com/originals/ba/bf/85/babf851f428ac12d5c7f045e88267acb.jpg" alt="Crop Top">
+                    <div>
+                        <h3>Stylish Crop Top</h3>
+                        <p>Size: <b>S</b></p>
+                        <h5><i class="bx bx-rupee"></i>899</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://i.etsystatic.com/22489341/r/il/5202da/3203911478/il_fullxfull.3203911478_pkgx.jpg" alt="Ethnic Kurti">
+                    <div>
+                        <h3>Ethnic Kurti</h3>
+                        <p>Size: <b>L</b></p>
+                        <h5><i class="bx bx-rupee"></i>1599</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.explicit.bing.net/th/id/OIP.P62UNbKcuy0o6Gm2sDXcuQHaJ4?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Denim Jeans">
+                    <div>
+                        <h3>Blue Denim</h3>
+                        <p>Size: <b>XL</b></p>
+                        <h5><i class="bx bx-rupee"></i>1799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="men">MEN CLOTHING</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.VGN4kTfpGKYzxxg59XVVyAHaJy?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Casual Shirt">
+                    <div>
+                        <h3>Casual Shirt</h3>
+                        <p>Size: <b>M</b></p>
+                        <h5><i class="bx bx-rupee"></i>799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://levi.in/cdn/shop/files/169601370_01_Styleshot.jpg?v=1736840861" alt="T-Shirt">
+                    <div>
+                        <h3>Cotton T-Shirt</h3>
+                        <p>Size: <b>L</b></p>
+                        <h5><i class="bx bx-rupee"></i>599</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.I6YCcZWlYI9M6FtRVLGQvQHaJo?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Jeans">
+                    <div>
+                        <h3>Slim Fit Jeans</h3>
+                        <p>Size: <b>L</b></p>
+                        <h5><i class="bx bx-rupee"></i>1499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.explicit.bing.net/th/id/OIP.fVO8VsxDCSH0I4s38D7sDAHaJ4?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Leather Jacket">
+                    <div>
+                        <h3>Leather Jacket</h3>
+                        <p>Size: <b>L</b></p>
+                        <h5><i class="bx bx-rupee"></i>2999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="belts">BELTS</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://i.etsystatic.com/17144720/r/il/3e8033/3229078507/il_fullxfull.3229078507_mif6.jpg" alt="Leather Belt">
+                    <div>
+                        <h3>Leather Belt</h3>
+                        <p>Size: <b>36</b></p>
+                        <h5><i class="bx bx-rupee"></i>499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/61RPmf88HTL._AC_UL1001_.jpg" alt="Canvas Belt">
+                    <div>
+                        <h3>Canvas Belt</h3>
+                        <p>Size: <b>28</b></p>
+                        <h5><i class="bx bx-rupee"></i>299</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.ENHJAOdUwuud73ibkiJI-QHaFR?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Formal Belt">
+                    <div>
+                        <h3>Formal Belt</h3>
+                        <p>Size: <b>34</b></p>
+                        <h5><i class="bx bx-rupee"></i>599</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.cLb3qR4BUJgNZr76luRxKwHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Designer Belt">
+                    <div>
+                        <h3>Designer Belt</h3>
+                        <p>Size: <b>38</b></p>
+                        <h5><i class="bx bx-rupee"></i>799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="sun">SUNGLASSES</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://mikeshouts.com/wp-content/uploads/2013/11/Ray-Ban-Aviator-Solid-Gold-Sunglasses-image-1-630x420.jpg" alt="Aviator">
+                    <div>
+                        <h3>Aviator Classic</h3>
+                        <p>Type: <b>Unisex</b></p>
+                        <h5><i class="bx bx-rupee"></i>899</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.PZBh47DBvLgM3cyfpJjQsQHaDt?cb=ucfimgc2&w=2400&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Wayfarer">
+                    <div>
+                        <h3>Wayfarer Black</h3>
+                        <p>Type: <b>Unisex</b></p>
+                        <h5><i class="bx bx-rupee"></i>799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://i5.walmartimages.com/seo/Round-Retro-John-Lennon-Sunglasses-Clear-Lens-Glasses-Vintage-Round-Sunglasses_def2dbcd-3419-4e3b-bb2f-c34965e0f0f4_1.6aa7d91c8bac2a9269a6c64dedfa8ff2.jpeg" alt="Round Retro">
+                    <div>
+                        <h3>Round Retro</h3>
+                        <p>Type: <b>Fashion</b></p>
+                        <h5><i class="bx bx-rupee"></i>699</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.U1uU---6YuYBceVKjgW4pQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sport">
+                    <div>
+                        <h3>Sport Shield</h3>
+                        <p>Type: <b>Athletic</b></p>
+                        <h5><i class="bx bx-rupee"></i>999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="wallets">WALLETS</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://cdn.shopify.com/s/files/1/0575/7177/products/no36-personalized-basic-flap-handmade-leather-wallet-crazy-horse-orange_2048x.jpg?v=1536619675" alt="Leather Wallet">
+                    <div>
+                        <h3>Leather Wallet</h3>
+                        <p>Type: <b>Bi-Fold</b></p>
+                        <h5><i class="bx bx-rupee"></i>599</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://levi.in/cdn/shop/files/IMG_0020_2.jpg?v=1746618108&width=1100" alt="Black Wallet">
+                    <div>
+                        <h3>Classic Black</h3>
+                        <p>Type: <b>Tri-Fold</b></p>
+                        <h5><i class="bx bx-rupee"></i>499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://levi.in/cdn/shop/files/IMG_0025_2.jpg?v=1746608084&width=1100" alt="Slim Wallet">
+                    <div>
+                        <h3>Slim Design</h3>
+                        <p>Type: <b>Minimalist</b></p>
+                        <h5><i class="bx bx-rupee"></i>699</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://levi.in/cdn/shop/files/14.jpg?v=1746609497&width=1445" alt="Premium Wallet">
+                    <div>
+                        <h3>Premium Brown</h3>
+                        <p>Type: <b>Luxury</b></p>
+                        <h5><i class="bx bx-rupee"></i>899</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="purses">PURSES</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.zgqDhii2w2xBvRywXiV1SQHaNI?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Shoulder Bag">
+                    <div>
+                        <h3>Shoulder Bag</h3>
+                        <p>Type: <b>Medium</b></p>
+                        <h5><i class="bx bx-rupee"></i>1299</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.X5scuixNzuNNG_ckSmmnMAHaEH?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sling Bag">
+                    <div>
+                        <h3>Stylish Sling</h3>
+                        <p>Type: <b>Small</b></p>
+                        <h5><i class="bx bx-rupee"></i>899</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.DlBzU-T7NsjCKs4wvGayxAHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Handbag">
+                    <div>
+                        <h3>Designer Handbag</h3>
+                        <p>Type: <b>Large</b></p>
+                        <h5><i class="bx bx-rupee"></i>1799</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.buO_RxV1BdbVuCjTn6y6pQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Clutch">
+                    <div>
+                        <h3>Party Clutch</h3>
+                        <p>Type: <b>Large</b></p>
+                        <h5><i class="bx bx-rupee"></i>699</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+
+            <br>
+            <h3 style="text-decoration: underline;" id="air">AIRPODS</h3>
+            <div class="container">
+                <div class="item-card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6510/6510541cv12d.jpg" alt="Wireless Buds">
+                    <div>
+                        <h3>Wireless Buds</h3>
+                        <p>Type: <b>TWS</b></p>
+                        <h5><i class="bx bx-rupee"></i>1999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/aca9d41e-7709-4b43-9a8f-84f6d2863949.jpg" alt="Pro Earbuds">
+                    <div>
+                        <h3>Pro Earbuds</h3>
+                        <p>Type: <b>Premium</b></p>
+                        <h5><i class="bx bx-rupee"></i>2999</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.YTYEBK7Cw3RYJwdgTLudfgHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Sport Pods">
+                    <div>
+                        <h3>Sport Pods</h3>
+                        <p>Type: <b>Athletic</b></p>
+                        <h5><i class="bx bx-rupee"></i>1499</h5>
+                    </div>
+                    <button class="whatsappOrderButton">ORDER ON WHATSAPP</button>
+                </div>
+
+                <div class="item-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.PkQYkCpvsHzyf7niDKyLYwHaEK?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Noise Cancel">
+                    <div>
+                        <h3>Noise Cancelling</h3>
+                        <p>Type: <b>ANC</b></p>
+                        <h5><i class="bx bx-rupee"></i>3499</h5>
+                    </div>
+                    <button class="whatsappOrderButton" id="orderButton">ORDER ON WHATSAPP</button>
+                </div>
+            </div>
+            
+        </section>
+    </center>
+
+</body>
+
+</html>
